@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using TechCareer.WernerHeisenberg.Survey.Domain.Entities.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    @await RenderSectionAsync("Head", required: false)
+    
+</head>
+<body>
+@* <header class="fixed-top" id="mainHeader"> *@
+@*     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" aria-label="Main navigation"> *@
+@*          *@
+@*         <div class="container-fluid "> *@
+@*                 <a class="navbar-brand" asp-area="" asp-controller="Dashboard" asp-action="Index"> *@
+@*                     <img src="logo-no-background.png" alt="Survey - Best friend challenge" title="Survey - Best friend challenge" width="50" height="50"/> *@
+@*                 </a> *@
+@*                 <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation"> *@
+@*                     <span class="navbar-toggler-icon"></span> *@
+@*                 </button> *@
+@*          *@
+@*                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault"> *@
+@*          *@
+@*                     <ul class="navbar-nav me-auto mb-2 mb-lg-0"> *@
+@*                         <li class="nav-item"> *@
+@*                             <a class="nav-link active" aria-current="page" asp-controller="Dashboard" asp-action="Index">Dashboard</a> *@
+@*                         </li> *@
+@*                         <li class="nav-item"> *@
+@*                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
+@*                         </li> *@
+@*                         <li class="nav-item"> *@
+@*                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+@*                         </li> *@
+@*          *@
+@*                     </ul> *@
+@*                     <partial name="_LoginPartial"/> *@
+@*                     $1$ #1# *@
+@*                     $1$ <form class="d-flex" role="search"> #1# *@
+@*                     $1$     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> #1# *@
+@*                     $1$     <button class="btn btn-outline-success" type="submit">Search</button> #1# *@
+@*                     $1$ </form> #1# *@
+@*                 </div> *@
+@*             </div> *@
+@*     </nav> *@
+@*     @if (SignInManager.IsSignedIn(Context.User)) *@
+@*     { *@
+@*         <div class="nav-scroller bg-body shadow-sm"> *@
+@*             <nav class="nav" aria-label="Secondary navigation"> *@
+@*                 <a class="nav-link active" aria-current="page" href="#">Dashboard</a> *@
+@*                 <a class="nav-link" href="#"> *@
+@*                     Friends *@
+@*                     <span class="badge text-bg-light rounded-pill align-text-bottom">27</span> *@
+@*                 </a> *@
+@*                 <a class="nav-link" href="#">Explore</a> *@
+@*                 <a class="nav-link" href="#">Suggestions</a> *@
+@*                 <a class="nav-link" href="#">Link</a> *@
+@*                 <a class="nav-link" href="#">Link</a> *@
+@*                 <a class="nav-link" href="#">Link</a> *@
+@*                 <a class="nav-link" href="#">Link</a> *@
+@*                 <a class="nav-link" href="#">Link</a> *@
+@*             </nav> *@
+@*         </div> *@
+@*     } *@
+@* </header> *@
+@*      *@
+@* <main id="mainContent" class="container"> *@
+@*     @RenderBody() *@
+@* </main> *@
+@* *@
+@* <footer class="border-top footer text-muted bg-warning"> *@
+@*     <div class="container"> *@
+@*         &copy; 2023 - Survey - Best friend challenge *@
+@*     </div> *@
+@* </footer> *@
+<div id="app">
+    @await RenderSectionAsync("ViewModelJson", required: false) 
+    @RenderBody()
+</div>
+
+@* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+@* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+@* <script src="~/js/site.min.js" asp-append-version="true"></script> *@
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Models\Views\" />
+      <Folder Include="Specifications\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.7.1" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+      <PackageReference Include="MediatR" Version="12.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TechCareer.WernerHeisenberg.Survey.Core\TechCareer.WernerHeisenberg.Survey.Core.csproj" />
+      <ProjectReference Include="..\TechCareer.WernerHeisenberg.Survey.Domain\TechCareer.WernerHeisenberg.Survey.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

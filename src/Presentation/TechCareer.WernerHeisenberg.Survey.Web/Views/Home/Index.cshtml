@@ -1,0 +1,31 @@
+﻿@using  Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Hosting
+@inject IWebHostEnvironment WebHostEnvironment
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Head
+{
+    <link type="module" rel="stylesheet" vite-href="~/src/views/Home/Index/main.ts" asp-append-version="true"/>
+    @if (!WebHostEnvironment.IsDevelopment())
+    {
+        <link type="module" rel="stylesheet" href="~/src/views/Home/Index/index.css" asp-append-version="true"/>
+    }
+}
+
+@section ViewModelJson
+{
+    <script id="viewModelJson" type="application/json">
+          @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new
+          {
+              
+          }))
+    </script>
+}
+
+
+@section Scripts
+{
+    <script type="module" vite-src="~/src/views/Home/Index/main.ts"  asp-append-version="true"></script>
+}

@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using TechCareer.WernerHeisenberg.Survey.Domain.Entities.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a class="nav-link " asp-action="Index" asp-controller="Dashboard" title="Manage">Hello @User.Identity?.Name!</a>
+        </li>
+        <li class="nav-item">
+            <form class="form-inline" asp-controller="Authorization" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Dashboard", new { area = "" })">
+                <button type="submit" class="nav-link btn btn-link">Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link"  asp-controller="Authorization" asp-action="Register" asp-route-returnUrl="@Context.Request.Headers.Referer">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="Authorization" asp-action="Login" asp-route-returnUrl="@Context.Request.Headers.Referer">Login</a>
+        </li>
+    }
+</ul>

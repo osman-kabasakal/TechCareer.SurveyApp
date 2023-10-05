@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\TechCareer.WernerHeisenberg.Survey.Application\TechCareer.WernerHeisenberg.Survey.Application.csproj" />
+      <ProjectReference Include="..\TechCareer.WernerHeisenberg.Survey.Domain\TechCareer.WernerHeisenberg.Survey.Domain.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="7.0.11" />
+      <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.11" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.11" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.11" />
+    </ItemGroup>
+
+
+
+
+
+</Project>
