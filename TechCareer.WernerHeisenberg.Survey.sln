@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{73AEAA52-B6F3-4A10-9774-BC60558CCDB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{88FF5BA3-FFA6-4CE9-B418-304B7DBCC823}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B63E073C-9ADA-4410-8B44-483DE493740D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B57AA6FA-A3BB-4E24-B051-5F4EF213D52E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A10988D8-3F9E-4142-8F04-F4A4B56AA2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechCareer.WernerHeisenberg.Survey.Domain", "src\Shared\TechCareer.WernerHeisenberg.Survey.Domain\TechCareer.WernerHeisenberg.Survey.Domain.csproj", "{830DC0CC-5B0F-4763-9D44-5B662371E43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechCareer.WernerHeisenberg.Survey.Infrastructure", "src\Shared\TechCareer.WernerHeisenberg.Survey.Infrastructure\TechCareer.WernerHeisenberg.Survey.Infrastructure.csproj", "{FDD651C3-FFDF-48C0-9072-7F2B03A187FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechCareer.WernerHeisenberg.Survey.Core", "src\Shared\TechCareer.WernerHeisenberg.Survey.Core\TechCareer.WernerHeisenberg.Survey.Core.csproj", "{36C93EA3-D337-46FB-83B8-FCEAAC3C694D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechCareer.WernerHeisenberg.Survey.Application", "src\Shared\TechCareer.WernerHeisenberg.Survey.Application\TechCareer.WernerHeisenberg.Survey.Application.csproj", "{B8D8A357-155E-4BA5-8E78-F97F7BF26D3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechCareer.WernerHeisenberg.Survey.Web", "src\Presentation\TechCareer.WernerHeisenberg.Survey.Web\TechCareer.WernerHeisenberg.Survey.Web.csproj", "{B85B4EA8-16AA-4FBC-92B2-09C02C68FB04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechCareer.WernerHeisenberg.Survey.Tests", "tests\TechCareer.WernerHeisenberg.Survey.Tests\TechCareer.WernerHeisenberg.Survey.Tests.csproj", "{4D6BBDCA-02EC-4076-B40A-128C0302EAD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B57AA6FA-A3BB-4E24-B051-5F4EF213D52E} = {73AEAA52-B6F3-4A10-9774-BC60558CCDB7}
+		{A10988D8-3F9E-4142-8F04-F4A4B56AA2FD} = {73AEAA52-B6F3-4A10-9774-BC60558CCDB7}
+		{830DC0CC-5B0F-4763-9D44-5B662371E43D} = {A10988D8-3F9E-4142-8F04-F4A4B56AA2FD}
+		{FDD651C3-FFDF-48C0-9072-7F2B03A187FA} = {A10988D8-3F9E-4142-8F04-F4A4B56AA2FD}
+		{36C93EA3-D337-46FB-83B8-FCEAAC3C694D} = {A10988D8-3F9E-4142-8F04-F4A4B56AA2FD}
+		{B8D8A357-155E-4BA5-8E78-F97F7BF26D3D} = {A10988D8-3F9E-4142-8F04-F4A4B56AA2FD}
+		{B85B4EA8-16AA-4FBC-92B2-09C02C68FB04} = {B57AA6FA-A3BB-4E24-B051-5F4EF213D52E}
+		{4D6BBDCA-02EC-4076-B40A-128C0302EAD7} = {B63E073C-9ADA-4410-8B44-483DE493740D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{830DC0CC-5B0F-4763-9D44-5B662371E43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830DC0CC-5B0F-4763-9D44-5B662371E43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830DC0CC-5B0F-4763-9D44-5B662371E43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830DC0CC-5B0F-4763-9D44-5B662371E43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD651C3-FFDF-48C0-9072-7F2B03A187FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD651C3-FFDF-48C0-9072-7F2B03A187FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD651C3-FFDF-48C0-9072-7F2B03A187FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD651C3-FFDF-48C0-9072-7F2B03A187FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C93EA3-D337-46FB-83B8-FCEAAC3C694D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C93EA3-D337-46FB-83B8-FCEAAC3C694D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C93EA3-D337-46FB-83B8-FCEAAC3C694D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C93EA3-D337-46FB-83B8-FCEAAC3C694D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D8A357-155E-4BA5-8E78-F97F7BF26D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D8A357-155E-4BA5-8E78-F97F7BF26D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D8A357-155E-4BA5-8E78-F97F7BF26D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D8A357-155E-4BA5-8E78-F97F7BF26D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B85B4EA8-16AA-4FBC-92B2-09C02C68FB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85B4EA8-16AA-4FBC-92B2-09C02C68FB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85B4EA8-16AA-4FBC-92B2-09C02C68FB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85B4EA8-16AA-4FBC-92B2-09C02C68FB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D6BBDCA-02EC-4076-B40A-128C0302EAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6BBDCA-02EC-4076-B40A-128C0302EAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6BBDCA-02EC-4076-B40A-128C0302EAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6BBDCA-02EC-4076-B40A-128C0302EAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -9,13 +9,6 @@ public class WebExceptionFilterAttribute: ExceptionFilterAttribute
     
     public WebExceptionFilterAttribute()
     {
-        // _exceptionHandlers = new Dictionary<Type, Action<ExceptionContext>>
-        // {
-        //     { typeof(ValidationException), HandleValidationException },
-        //     { typeof(NotFoundException), HandleNotFoundException },
-        //     { typeof(UnauthorizedAccessException), HandleUnauthorizedAccessException },
-        //     { typeof(ForbiddenAccessException), HandleForbiddenAccessException },
-        // };
     }
 
     public override void OnException(ExceptionContext context)
